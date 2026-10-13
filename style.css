@@ -1,0 +1,338 @@
+html, body {
+    /*removes white border from outer edge of website*/
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-top: 40px; /*so that navbar being fixed doesnt get in way*/
+    height: auto;
+    color: var(--white);
+    display:grid;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #3EB6E5;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr 0.6fr 0.6fr 0.2fr 1.2fr 0.2fr 0.6fr 0.6fr 0.3fr;
+    /* gap: 0.5rem; */
+
+    grid-template-areas:
+
+    "profile profile profile skills skills skills"
+    "projectSection projectSection projectSection projectSection projectSection projectSection"
+    "project1 project1 project1 project2 project2 project2"
+    "project3 project3 project3 project4 project4 project4"
+    "experienceSection experienceSection experienceSection experienceSection experienceSection experienceSection"
+    "experience1 experience1 experience2 experience2 experience3 experience3"
+    "educationSection educationSection educationSection educationSection educationSection educationSection"
+    "education1 education1 education1 education2 education2 education2"
+    "education3 education3 education3 education4 education4 education4"
+    "footer footer footer footer footer footer"
+    ;
+}
+
+#profile {
+    background-color: #3EB6E5;
+    grid-area: profile;
+    height: auto;
+    padding: 10px;
+}
+
+#skills {
+    background-color: #3EB6E5;
+    grid-area: skills;
+    height: auto;
+    padding: 10px;
+}
+
+#projectSection {
+    grid-area: projectSection;
+    background-color: #3190B7;
+}
+
+#project1 {
+    grid-area: project1;
+    background-color: #3190B7;
+    display: flex;
+    align-items: flex-start;
+}
+
+#project2 {
+    grid-area: project2;
+    background-color: #3190B7;
+    display: flex;
+    align-items: flex-start;
+}
+
+#project3 {
+    grid-area: project3;
+    background-color: #3190B7;
+    display: flex;
+    align-items: flex-start;
+}
+
+#project4 {
+    grid-area: project4;
+    background-color: #3190B7;
+    display: flex;
+    align-items: flex-start;
+}
+
+#experienceSection {
+    grid-area: experienceSection;
+    background-color: #287594;
+}
+
+#experience1{
+    grid-area: experience1;
+    background-color: #287594;
+    display: block;
+    align-items: flex-start;
+}
+
+#experience2{
+    grid-area: experience2;
+    background-color: #287594;
+    display: block;
+    align-items: flex-start;
+}
+
+#experience3{
+    grid-area: experience3;
+    background-color: #287594;
+    display: block;
+    align-items: flex-start;
+}
+
+#educationSection {
+    grid-area: educationSection;
+    background-color: #4A92AE;
+}
+
+#education1 {
+    grid-area: education1;
+    background-color: #4A92AE;
+    display: flex;
+    align-items: flex-start;
+}
+
+#education2 {
+    grid-area: education2;
+    background-color: #4A92AE;
+    display: flex;
+    align-items: flex-start;
+}
+
+#education3 {
+    grid-area: education3;
+    background-color: #4A92AE;
+    display: flex;
+    align-items: flex-start;
+}
+
+#education4 {
+    grid-area: education4;
+    background-color: #4A92AE;
+    display: flex;
+    align-items: flex-start;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: #618897;
+    display: flex;
+    /* display: flex; */
+    /* padding: 10px; */
+    /* align-items: flex-start; */
+}
+
+#footerSocials{
+    /* grid-area: footerSocials; */
+    background-color: #618897;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center; /*vertical alignment*/
+    /* height: auto; */
+    /* padding: 10px; */
+}
+
+#footerContactMe{
+    /* grid-area: footerContactMe; */
+    background-color: #618897;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center; /*vertical alignment*/
+    /* height: auto; */
+    padding: 5px;
+    max-width: 100%;
+}
+
+#menu a {
+    color:black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+#menu {
+    position: fixed; /*navbar never goes away even when scrolling*/
+    width: 100%;
+    text-align: end;
+    justify-content: flex-end;
+    background-color: #618897; /* adobe color wheel https://color.adobe.com/create/color-wheel?color-palette=3190B7%2C287594%2C1D556B%2C123542%2C3EB6E5&color-palette-name=My+Color+Theme */
+    padding: 10px;
+}
+
+#hamburgerMenu{
+        display: none;
+        margin-right: 20px;
+}
+
+
+#profile img{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#profile p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 24px;
+}
+#skills li {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    /* line-height: 28px; */
+    padding-bottom: 15px;
+}
+h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+ .contentImage{
+    width: 40%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+ }
+  .contentImageVertical{
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+ }
+  .linkImage{
+    width: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+ }
+ .projects p{
+    flex: 1;
+    overflow-wrap: break-word;
+ }
+ .experiences p{
+    flex: 1;
+    overflow-wrap: break-word;
+ }
+ .education p{
+    flex: 1;
+    overflow-wrap: break-word;
+ }
+
+ input{
+    margin: 5px;
+    width: 40%;
+ }
+ .bigTextInput{
+     height: 5vh;
+     width: auto;
+ }
+ .rightAlign{
+    display: block;
+    margin-left: auto;
+    margin-right: 5px;
+
+ }
+
+
+@media (max-width: 500px) {
+    .container{
+    padding-top: 40px; /*so that navbar being fixed doesnt get in way*/
+
+    color: var(--white);
+    display:grid;
+    height: 100vh;
+    width: 100%;
+    background-color: #3EB6E5;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.2fr 1fr 1fr 1fr 1fr 0.2fr 1fr 1fr 1fr 0.2fr 1fr 1fr 1fr 1fr 0.5fr;
+    /* gap: 0.5rem; */
+
+    grid-template-areas:
+
+    "profile"
+    "skills"
+    "projectSection"
+    "project1"
+    "project2"
+    "project3"
+    "project4"
+    "experienceSection"
+    "experience1"
+    "experience2"
+    "experience3"
+    "educationSection"
+    "education1"
+    "education2"
+    "education3"
+    "education4"
+    "footer";
+    }
+    h1 {
+            text-align: center;
+            font-size: 10vh;
+        }
+    #profile p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #footerContactMe{
+        display: block;
+    }
+
+    #hamburgerMenu{
+        display: inline;
+    }
+    .navLinks { 
+        display: none;
+        padding: 10px;
+    }
+    .navLinks.open {
+         display: block; 
+    }
+
+    .linkImage{
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
