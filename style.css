@@ -192,7 +192,8 @@ html, body {
 
 #profile img{
     display: block;
-    width: 50%;
+    height: 20vw;
+    min-height: 300px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -201,7 +202,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 4vh;
+    font-size: 3vh;
 }
 #skills li {
     width: 80%;
@@ -210,12 +211,12 @@ html, body {
     font-size: larger;
     /* line-height: 28px; */
     padding-bottom: 15px;
-    font-size: 3vh;
+    font-size: 3.25vh;
 }
 
 h1 {
             text-align: center;
-            font-size: 6vh;
+            font-size: 5vh;
     }
 
  .contentImage{
@@ -303,6 +304,10 @@ h1 {
             text-align: center;
             font-size: 6vh;
         }
+
+    #profile img{
+        min-height: 200px;
+    }
     
     #profile p {
         width: 80%;
