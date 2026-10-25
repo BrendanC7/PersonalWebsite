@@ -23,7 +23,7 @@ html, body {
     background-color: var(--secondary-color);
 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.2fr 0.6fr 0.6fr 0.2fr 1.2fr 0.2fr 0.6fr 0.3fr;
+    grid-template-rows: 1fr 0.2fr auto auto 0.2fr auto 0.2fr auto 0.3fr;
     /* gap: 0.5rem; */
 
     grid-template-areas:
@@ -100,6 +100,8 @@ html, body {
     padding: 10px;
     border-radius: 10px;
     border: solid var(--dark-color) 3px;
+    color: var(--font-color);
+    font-size: 1.5cqi;
 }
 
 #experience1{
@@ -127,8 +129,8 @@ html, body {
     padding: 10px;
     border-radius: 10px;
     border: solid var(--dark-color) 3px;
-    font-size: 1.5cqi;
     color: var(--font-color);
+    font-size: 1.5cqi;
 }
 
 #education1 {
@@ -299,12 +301,13 @@ h1 {
             text-align: center;
             font-size: 6vh;
         }
+    
     #profile p {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        font-size: 4vh;
+        font-size: 8vw;
     }
 
     .projects{
@@ -312,6 +315,10 @@ h1 {
     }
 
     .education{
+        font-size: 3cqi;
+    }
+
+    .experiences{
         font-size: 3cqi;
     }
 
@@ -337,5 +344,17 @@ h1 {
         margin-right: auto;
     }
     
+    .contentImageVertical{
+        width: 60%;
+    }
+
+    input{
+    margin: 5px;
+    width: 70%;
+    }
+    .bigTextInput{
+        height: 5vh;
+        width: 70%;
+    }
 }
 
